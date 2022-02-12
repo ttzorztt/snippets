@@ -1,166 +1,187 @@
-snippet frac ""
+# b ：只有当 trigger在行首才有效
+# i ：默认情况下, trigger是自成一个单词才有用. 加了这个选项, 即使是在单词中, 只要出现了这几个字母, 就可以使用. 比如 aaatrigger, 也可以使用.
+# w：与i相反, 只有是一个单词(前面是空格) 才可以使用.
+# r：支持正则表达式t在这里,的其他功能失效, 就当成空格使用.
+# A：trigger不需要按tab就可以自动展开.
+snippet frac "" A
 \frac{$1}{$2} $3
 endsnippet
 
-snippet neq ""
+snippet " "" A
+"$1"
+endsnippet
+
+snippet ' "" A
+'$1'
+endsnippet
+
+snippet neq "" 
 \neq $1
 endsnippet
 
-snippet ( ""
-($1)
+snippet ( "" A
+($1) $2
 endsnippet
 
-snippet { ""
-{$1}
+snippet { "" A
+{$1} $2
 endsnippet
 
-snippet [ ""
-[$1]
+snippet [ "" A
+[$1] $2
 endsnippet
 
-snippet geq ""
+snippet geq "" 
 \geq 
 endsnippet
 
-snippet leq ""
+snippet leq "" 
 \leq
 endsnippet
 
-snippet in ""
+snippet in "" 
 \in
 endsnippet
 
-snippet Ra ""
+snippet Ra "" 
 \Rightarrow
 endsnippet
 
-snippet	nRa ""
+snippet	nRa "" 
 \nRightarrow
 endsnippet
 
-snippet nra ""
+snippet nra "" 
 \nrightarrow
 endsnippet
 
-snippet ra ""
+snippet ra "" 
 \rightarrow
 endsnippet
 
-snippet exists ""
+snippet lra "" 
+\leftrightarrow
+endsnippet
+
+snippet Lra "" 
+\Leftrightarrow
+endsnippet
+
+snippet exists "" 
 \exists
 endsnippet
 
-snippet lim ""
+snippet lim "" 
 \lim\limits_{$1 \to $2} $3
 endsnippet
 
-snippet sum ""
+snippet sum "" 
 \sum\limits_{$1}^{$2} $3
 endsnippet
 
-snippet $ ""
+snippet $ "" A
 $ $1 $
 endsnippet
 
-snippet	$$ ""
+snippet	$$ "" A
 $$ $1 $$
 endsnippet
 
-snippet case ""
+snippet case "" 
 
 \begin{cases}
 $1
 \end{cases}
 endsnippet
 
-snippet pi ""
+snippet pi "" A
 \pi $1
 endsnippet
 
-snippet sub ""
+snippet sub "" 
 \subsection{$1}
 endsnippet
 
-snippet int_ ""
+snippet int_ "" A
 \int_{$1}^{$2} $3
 endsnippet
 
-snippet subsub ""
+snippet subsub "" 
 \subsubsection{$1}
 endsnippet
 
-snippet sec ""
+snippet sec "" 
 \section{$1}
 endsnippet
 
-snippet textbf ""
+snippet textbf "" 
 \textbf{$1}
 endsnippet
 
-snippet par ""
+snippet par "" A
 \par 
 $1
 endsnippet
 
-snippet enum ""
+snippet enum "" A
 \begin{enumerate} [$1]
 	\item $2
 	\item $3
 \end{enumerate}
 endsnippet
 
-snippet int ""
-\int$0 
+snippet int "" 
+\int $0 
 endsnippet
 
-snippet item ""
+snippet item "" 
 \item $1
 endsnippet
 
-snippet sin ""
+snippet sin "" 
 \sin $1
 endsnippet
 
-snippet cos ""
+snippet cos "" 
 \cos $1
 endsnippet 
 
-snippet tan ""
-\tan $1
+snippet tan "" 
+\tan $1 
 endsnippet
 
-snippet arctan ""
+snippet arctan "" 
 \arctan $1
 endsnippet
 
-snippet arcsin ""
+snippet arcsin "" 
 \arcsin $1
 endsnippet
 
-snippet arccos ""
+snippet arccos "" 
 \arccos $1
 endsnippet
 
-snippet sec ""
+snippet sec "" 
 \sec $1
 endsnippet 
 
-snippet csc ""
+snippet csc "" 
 \csc $1
 endsnippet
 
-snippet cot ""
-\cot $1
+snippet cot "" 
+\cot $1 
 endsnippet
 
-snippet inf ""
+snippet inf "" A
 \infty $1
 endsnippet
 
-snippet ln ""
+snippet ln "" 
 \ln $1
 endsnippet
 
-snippet sqrt ""
+snippet sqrt "" 
 \sqrt{$1}
 endsnippet
