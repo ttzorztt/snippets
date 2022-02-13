@@ -2,7 +2,9 @@
 
 git pull
 
-file=$1
+file=0
+printf "please input you want alter file: \n$ "
+read file
 vim "$file.snippets"
 
 if (( file == "tex" )); then
