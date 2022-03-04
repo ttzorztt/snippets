@@ -7,18 +7,20 @@ snippet frac "" A
 \frac{$1}{$2} $3
 endsnippet
 
-snippet longtable "" A
+# usepackage{longtable}
+# usepackage{tabu}
+# usepackage{booktabs}
+snippet longtabu "" A
 
-\begin{longtable}{$1}
+\begin{longtabu}{$1}
 	\caption*{$2} \\
 	\toprule
 	$3
 	\midrule
 	$4
 	\bottomrule
-\end{longtable}
+\end{longtabu}
 endsnippet
-
 
 snippet xz "" 
 eg. $1 ($2) \par
