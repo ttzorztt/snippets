@@ -65,11 +65,11 @@ snippet xle "" A
 \xlongequal
 endsnippet
 
-snippet " "" A
+snippet " "" i
 "$1"
 endsnippet
 
-snippet ' "" A
+snippet ' "" i
 '$1'
 endsnippet
 
@@ -77,17 +77,19 @@ snippet neq ""
 \neq $1
 endsnippet
 
-snippet ( "" A
+snippet ( "" i
 ($1)$2
 endsnippet
 
-snippet （ "" A
+snippet （ "" i
 ($1)$2
-snippet { "" A
+endsnippet
+
+snippet { "" i
 {$1}$2
 endsnippet
 
-snippet [ "" A
+snippet [ "" i
 [$1]$2
 endsnippet
 
@@ -183,10 +185,88 @@ snippet par "" A
 $1
 endsnippet
 
-snippet enum "" A
+
+snippet enum2 "" i
 \begin{enumerate} [$\bullet$]
 	\item $1
 	\item $2
+\end{enumerate}
+endsnippet
+
+snippet enum3 "" i
+\begin{enumerate} [$\bullet$]
+	\item $1
+	\item $2
+	\item $3
+\end{enumerate}
+endsnippet
+
+snippet enum4 "" i
+\begin{enumerate} [$\bullet$]
+	\item $1
+	\item $2
+	\item $3
+	\item $4
+\end{enumerate}
+endsnippet
+
+snippet enum5 "" i
+\begin{enumerate} [$\bullet$]
+	\item $1
+	\item $2
+	\item $3
+	\item $4
+	\item $5
+\end{enumerate}
+endsnippet
+
+snippet enum6 "" i 
+\begin{enumerate} [$\bullet$]
+	\item $1
+	\item $2
+	\item $3
+	\item $4
+	\item $5
+	\item $6
+\end{enumerate}
+endsnippet
+
+snippet enum7 "" i 
+\begin{enumerate} [$\bullet$]
+	\item $1
+	\item $2
+	\item $3
+	\item $4
+	\item $5
+	\item $6
+	\item $7
+\end{enumerate}
+endsnippet
+
+snippet enum8 "" i 
+\begin{enumerate} [$\bullet$]
+	\item $1
+	\item $2
+	\item $3
+	\item $4
+	\item $5
+	\item $6
+	\item $7
+	\item $8
+\end{enumerate}
+endsnippet
+
+snippet enum9 "" i 
+\begin{enumerate} [$\bullet$]
+	\item $1
+	\item $2
+	\item $3
+	\item $4
+	\item $5
+	\item $6
+	\item $7
+	\item $8
+	\item $9
 \end{enumerate}
 endsnippet
 
