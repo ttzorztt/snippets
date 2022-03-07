@@ -14,11 +14,11 @@ snippet figure*2 "" A
 	\hbox{
 		\vbox{\hsize 0.5\textwidth
 			\begin{verbatim}
-$1
+			$1
 				\end{verbatim}}
 		\vbox{\hsize 0.5\textwidth
 			\begin{verbatim}
-$2
+			$2
 				\end{verbatim}}
 	}
 }
@@ -35,317 +35,316 @@ endsnippet
 # usepackage{tabu}
 # usepackage{booktabs}
 snippet longtabu "" A
-
 \begin{longtabu}{$1}
 \caption*{$2} \\\
-		\toprule
-		$3
-		\midrule
-		$4
-		\bottomrule
-		\end{longtabu}
-		endsnippet
+\toprule
+$3
+\midrule
+$4
+\bottomrule
+\end{longtabu}
+endsnippet
 
-		snippet xz ""
-		eg. $1 ($2) \par
-		A. $3 \par
-		B. $4 \par
-		C. $5 \par
-		D. $6 \par
-		$7
-		endsnippet
+snippet xz ""
+eg. $1 ($2) \par
+A. $3 \par
+B. $4 \par
+C. $5 \par
+D. $6 \par
+$7
+endsnippet
 
-		snippet textit "" A
-		\textit{$1}
-		endsnippet
+snippet textit "" A
+\textit{$1}
+endsnippet
 
-		snippet ^ "" A
-		^{$1}
-		endsnippet
+snippet ^ "" A
+^{$1}
+endsnippet
 
-		snippet aligned "" A
-		\begin{aligned}
-		$1
-		\end{aligned}
-		endsnippet
+snippet aligned "" A
+\begin{aligned}
+$1
+\end{aligned}
+endsnippet
 
-		snippet to "" A
-		\to $1
-		endsnippet
+snippet to "" A
+\to $1
+endsnippet
 
-		snippet therefore "" A
-		\therefore $1
-		endsnippet
+snippet therefore "" A
+\therefore $1
+endsnippet
 
-		snippet quad ""
-		\quad $1
-		endsnippet
+snippet quad ""
+\quad $1
+endsnippet
 
-		snippet qquad "" A
-		\qquad $1
-		endsnippet
+snippet qquad "" A
+\qquad $1
+endsnippet
 
-		snippet xle "" A
-		\xlongequal
-		endsnippet
+snippet xle "" A
+\xlongequal
+endsnippet
 
-		snippet " "" A
-		"$1"
-		endsnippet
+snippet " "" A
+"$1"
+endsnippet
 
-		snippet ' "" A
-		'$1'
-		endsnippet
+snippet ' "" A
+'$1'
+endsnippet
 
-		snippet neq ""
-		\neq $1
-		endsnippet
+snippet neq ""
+\neq $1
+endsnippet
 
-		snippet ( "" A
-				($1)$2
-				endsnippet
+snippet A "" A
+($1)$2
+endsnippet
 
-				snippet （ "" A
-				($1)$2
-				endsnippet
+snippet （ "" A
+($1)$2
+endsnippet
 
-				snippet { "" A
-				{$1}$2
-				endsnippet
+snippet { "" A
+{$1}$2
+endsnippet
 
-				snippet [ "" A
-				[$1]$2
-				endsnippet
+snippet [ "" A
+[$1]$2
+endsnippet
 
-				snippet geq ""
-				\geq
-				endsnippet
+snippet geq ""
+\geq
+endsnippet
 
-				snippet leq ""
-				\leq
-				endsnippet
+snippet leq ""
+\leq
+endsnippet
 
-				snippet in ""
-				\in
-				endsnippet
+snippet in ""
+\in
+endsnippet
 
-				snippet Ra ""
-				\Rightarrow
-				endsnippet
+snippet Ra ""
+\Rightarrow
+endsnippet
 
-				snippet	nRa ""
-				\nRightarrow
-				endsnippet
+snippet	nRa ""
+\nRightarrow
+endsnippet
 
-				snippet nra ""
-				\nrightarrow
-				endsnippet
+snippet nra ""
+\nrightarrow
+endsnippet
 
-				snippet ra ""
-				\rightarrow
-				endsnippet
+snippet ra ""
+\rightarrow
+endsnippet
 
-				snippet lra ""
-				\leftrightarrow
-				endsnippet
+snippet lra ""
+\leftrightarrow
+endsnippet
 
-				snippet Lra ""
-				\Leftrightarrow
-				endsnippet
+snippet Lra ""
+\Leftrightarrow
+endsnippet
 
-				snippet exists ""
-				\exists
-				endsnippet
+snippet exists ""
+\exists
+endsnippet
 
-				snippet lim ""
-				\lim\limits_{$1 \to $2} $3
-				endsnippet
+snippet lim ""
+\lim\limits_{$1 \to $2} $3
+endsnippet
 
-				snippet sum ""
-				\sum\limits_{$1}^{$2} $3
-				endsnippet
+snippet sum ""
+\sum\limits_{$1}^{$2} $3
+endsnippet
 
-				snippet $ ""
-				$ $1 $
-				endsnippet
+snippet $ ""
+$ $1 $
+endsnippet
 
-				snippet	$$ "" A
-				$$ $1 $$
-				endsnippet
+snippet	$$ "" A
+$$ $1 $$
+endsnippet
 
-				snippet case ""
+snippet case ""
 
-				\begin{cases}
-				$1
-					\end{cases}
-				endsnippet
+\begin{cases}
+$1
+\end{cases}
+endsnippet
 
-					snippet pi "" A
-					\pi $1
-					endsnippet
+snippet pi "" A
+\pi $1
+endsnippet
 
-					snippet ssec ""
-					\subsection{$1}
-				endsnippet
+snippet ssec ""
+\subsection{$1}
+endsnippet
 
-					snippet int_ ""
-					\int_{$1}^{$2} $3
-					endsnippet
+snippet int_ ""
+\int_{$1}^{$2} $3
+endsnippet
 
-					snippet sssec ""
-					\subsubsection{$1}
-				endsnippet
+snippet sssec ""
+\subsubsection{$1}
+endsnippet
 
-					snippet sec ""
-					\section{$1}
-				endsnippet
+snippet sec ""
+\section{$1}
+endsnippet
 
-					snippet textbf "" A
-					\textbf{$1}
-				endsnippet
+snippet textbf "" A
+\textbf{$1}
+endsnippet
 
-					snippet par "" A
-					\par
-					$1
-					endsnippet
+snippet par "" A
+\par
+$1
+endsnippet
 
 
-					snippet enum2 "" A
-					\begin{enumerate} [$\bullet$]
-					\item $1
-					\item $2
-					\end{enumerate}
-				endsnippet
+snippet enum2 "" A
+\begin{enumerate} [$\bullet$]
+\item $1
+\item $2
+\end{enumerate}
+endsnippet
 
-					snippet enum3 "" A
-					\begin{enumerate} [$\bullet$]
-					\item $1
-					\item $2
-					\item $3
-					\end{enumerate}
-				endsnippet
+snippet enum3 "" A
+\begin{enumerate} [$\bullet$]
+\item $1
+\item $2
+\item $3
+\end{enumerate}
+endsnippet
 
-					snippet enum4 "" A
-					\begin{enumerate} [$\bullet$]
-					\item $1
-					\item $2
-					\item $3
-					\item $4
-					\end{enumerate}
-				endsnippet
+snippet enum4 "" A
+\begin{enumerate} [$\bullet$]
+\item $1
+\item $2
+\item $3
+\item $4
+\end{enumerate}
+endsnippet
 
-					snippet enum5 "" A
-					\begin{enumerate} [$\bullet$]
-					\item $1
-					\item $2
-					\item $3
-					\item $4
-					\item $5
-					\end{enumerate}
-				endsnippet
+snippet enum5 "" A
+\begin{enumerate} [$\bullet$]
+\item $1
+\item $2
+\item $3
+\item $4
+\item $5
+\end{enumerate}
+endsnippet
 
-					snippet enum6 "" A
-					\begin{enumerate} [$\bullet$]
-					\item $1
-					\item $2
-					\item $3
-					\item $4
-					\item $5
-					\item $6
-					\end{enumerate}
-				endsnippet
+snippet enum6 "" A
+\begin{enumerate} [$\bullet$]
+\item $1
+\item $2
+\item $3
+\item $4
+\item $5
+\item $6
+\end{enumerate}
+endsnippet
 
-					snippet enum7 "" A
-					\begin{enumerate} [$\bullet$]
-					\item $1
-					\item $2
-					\item $3
-					\item $4
-					\item $5
-					\item $6
-					\item $7
-					\end{enumerate}
-				endsnippet
+snippet enum7 "" A
+\begin{enumerate} [$\bullet$]
+\item $1
+\item $2
+\item $3
+\item $4
+\item $5
+\item $6
+\item $7
+\end{enumerate}
+endsnippet
 
-					snippet enum8 "" A
-					\begin{enumerate} [$\bullet$]
-					\item $1
-					\item $2
-					\item $3
-					\item $4
-					\item $5
-					\item $6
-					\item $7
-					\item $8
-					\end{enumerate}
-				endsnippet
+snippet enum8 "" A
+\begin{enumerate} [$\bullet$]
+\item $1
+\item $2
+\item $3
+\item $4
+\item $5
+\item $6
+\item $7
+\item $8
+\end{enumerate}
+endsnippet
 
-					snippet enum9 "" A
-					\begin{enumerate} [$\bullet$]
-					\item $1
-					\item $2
-					\item $3
-					\item $4
-					\item $5
-					\item $6
-					\item $7
-					\item $8
-					\item $9
-					\end{enumerate}
-				endsnippet
+snippet enum9 "" A
+\begin{enumerate} [$\bullet$]
+\item $1
+\item $2
+\item $3
+\item $4
+\item $5
+\item $6
+\item $7
+\item $8
+\item $9
+\end{enumerate}
+endsnippet
 
-					snippet int ""
-					\int $0
-					endsnippet
+snippet int ""
+\int $0
+endsnippet
 
-					snippet item ""
-					\item $1
-					endsnippet
+snippet item ""
+\item $1
+endsnippet
 
-					snippet sin ""
-					\sin $1
-					endsnippet
+snippet sin ""
+\sin $1
+endsnippet
 
-					snippet cos ""
-					\cos $1
-					endsnippet
+snippet cos ""
+\cos $1
+endsnippet
 
-					snippet tan ""
-					\tan $1
-					endsnippet
+snippet tan ""
+\tan $1
+endsnippet
 
-					snippet arctan ""
-					\arctan $1
-					endsnippet
+snippet arctan ""
+\arctan $1
+endsnippet
 
-					snippet arcsin ""
-					\arcsin $1
-					endsnippet
+snippet arcsin ""
+\arcsin $1
+endsnippet
 
-					snippet arccos ""
-					\arccos $1
-					endsnippet
+snippet arccos ""
+\arccos $1
+endsnippet
 
-					snippet sec ""
-					\sec $1
-					endsnippet
+snippet sec ""
+\sec $1
+endsnippet
 
-					snippet csc ""
-					\csc $1
-					endsnippet
+snippet csc ""
+\csc $1
+endsnippet
 
-					snippet cot ""
-					\cot $1
-					endsnippet
+snippet cot ""
+\cot $1
+endsnippet
 
-					snippet inf ""
-					\infty $1
-					endsnippet
+snippet inf ""
+\infty $1
+endsnippet
 
-					snippet ln ""
-					\ln $1
-					endsnippet
+snippet ln ""
+\ln $1
+endsnippet
 
-					snippet sqrt ""
-					\sqrt{$1}
-				endsnippet
+snippet sqrt ""
+\sqrt{$1}
+endsnippet
