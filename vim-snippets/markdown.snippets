@@ -1,29 +1,71 @@
-snippet # ""
-# $1 #
+snippet sec "" 
+# $1 
 endsnippet
 
-snippet ` ""
-\` $1 
+snippet ssec ""
+## $1 
 endsnippet
 
-snippet ## ""
-## $1 ##
+snippet sssec "" Ai
+### $1 
 endsnippet
 
-snippet ### ""
-### $1 ###
-endsnippet
-
-snippet #### ""
-#### $1 ####
-endsnippet
-
-snippet ##### ""
-##### $1 ######
-endsnippet
-
-snippet ``` "" 
+snippet code "" 
 \`\`\` $1
 $2
 \`\`\`
 endsnippet
+
+snippet graph "" Ai 
+
+\`\`\`mermaid
+graph ${1:TD};
+$2
+\`\`\`
+
+endsnippet
+
+snippet table "" 
+<table> 
+$1
+</table>
+endsnippet
+
+snippet tr "" 
+<tr algin="center">
+$1
+</tr>
+endsnippet
+
+snippet td "" 
+<td> $1 </td>
+endsnippet
+
+snippet rowtd "" 
+<td rowspan="$1"> $2 </td>
+endsnippet
+
+snippet coltd "" 
+<td colspan="$1"> $2 </td>
+endsnippet
+
+snippet red "" 
+<font color="red"> $1 </font>
+endsnippet
+
+snippet blue ""
+<font color="blue"> $1 </font>
+endsnippet
+
+snippet pick ""
+<font color="blue"> $1 </font>
+endsnippet
+
+snippet green ""
+<font color="green"> $1 </font>
+endsnippet
+
+snippet img ""
+<img src="$1" width="${1:80%}"/>
+endsnippet
+

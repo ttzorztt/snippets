@@ -3,18 +3,21 @@
 # w：与i相反, 只有是一个单词(前面是空格) 才可以使用.
 # r：支持正则表达式t在这里,的其他功能失效, 就当成空格使用.
 # A：trigger不需要按tab就可以自动展开.
+snippet mfrac "" A
+$ \frac{$1}{$2} $
+endsnippet
+
 snippet frac "" A
-\frac{$1}{$2}$3
+\frac{$1}{$2} 
 endsnippet
 
-snippet m "" 
-$ $1 $
+snippet msim "" A 
+$ \sim $1 $
 endsnippet
 
-snippet sim "" 
+snippet misim ""
 \sim $1
 endsnippet
-
 
 snippet img "" 
 \begin{figure}[H]
@@ -25,11 +28,12 @@ snippet img ""
 $4
 endsnippet
 
-snippet “ "" A
+
+snippet “ "" Ai
 "$1"
 endsnippet
 
-snippet ， "" A
+snippet ， "" Ai
 ,$1
 endsnippet
 
@@ -97,6 +101,7 @@ $4
 	}
 }
 \end{figure}
+
 endsnippet
 snippet code ""
 \begin{verbatim}
@@ -131,7 +136,7 @@ snippet textit "" A
 \textit{$1}
 endsnippet
 
-snippet ^ "" i
+snippet ^ "" Ai
 ^{$1}
 endsnippet
 
@@ -141,104 +146,177 @@ $1
 \end{aligned}
 endsnippet
 
+snippet mto "" A
+$\to $ $1
+endsnippet
+
 snippet to "" A
 \to $1
+endsnippet
+
+snippet mtherefore "" Ai
+$\therefore $ $1
 endsnippet
 
 snippet therefore "" A
 \therefore $1
 endsnippet
 
+snippet mquad ""
+$ \quad $ $1
+endsnippet
+
 snippet quad ""
 \quad $1
+endsnippet
+
+snippet mqquad "" A
+$ \qquad $ $1
 endsnippet
 
 snippet qquad "" A
 \qquad $1
 endsnippet
 
-snippet xle "" A
+snippet xle "" Ai
 \xlongequal[${1:${VISUAL:Top}}]{${2:${VISUAL:Bottom}}}
 endsnippet
 
-snippet " "" A
+snippet " "" Ai
 "$1"
 endsnippet
 
-snippet ' "" A
+snippet ' "" Ai
 '$1'
+endsnippet
+
+snippet mneq ""
+$ \neq $ $1
 endsnippet
 
 snippet neq ""
 \neq $1
 endsnippet
 
-snippet ( "" A
+snippet ( "" Ai
 ($1)$2
 endsnippet
 
-snippet （ "" A
+snippet （ "" Ai
 ($1)$2
 endsnippet
 
-snippet { "" A
+snippet { "" Ai
 {$1}$2
 endsnippet
 
-snippet [ "" A
+snippet [ "" Ai
 [$1]$2
+endsnippet
+
+snippet mgeq ""
+$\geq $ $1
 endsnippet
 
 snippet geq ""
 \geq $1
 endsnippet
 
+snippet mleq ""
+$\leq $ $1
+endsnippet
+
 snippet leq ""
 \leq $1
+endsnippet
+
+snippet min ""
+$\in $ $1
 endsnippet
 
 snippet in ""
 \in $1
 endsnippet
 
+snippet mRa ""
+$ \Rightarrow$ $1
+endsnippet
+
 snippet Ra ""
-\Rightarrow $
+\Rightarrow $1
+endsnippet
+
+snippet	mnRa ""
+$\nRightarrow $ $1
 endsnippet
 
 snippet	nRa ""
 \nRightarrow
 endsnippet
 
+snippet mnra ""
+$ \nrightarrow $ $1
+endsnippet
+
 snippet nra ""
 \nrightarrow
+endsnippet
+
+snippet mra ""
+$\rightarrow $
 endsnippet
 
 snippet ra ""
 \rightarrow
 endsnippet
 
+snippet mlra ""
+$ \leftrightarrow $ $1
+endsnippet
+
 snippet lra ""
-\leftrightarrow
+\leftrightarrow $1
+endsnippet
+
+snippet mLra ""
+$ \Leftrightarrow $ $1
 endsnippet
 
 snippet Lra ""
-\Leftrightarrow
+\Leftrightarrow $1
 endsnippet
 
+snippet mexists ""
+$ \exists $ $1
+endsnippet
+
+
 snippet exists ""
-\exists
+\exists $1
+endsnippet
+
+snippet mlim ""
+$ \lim $ $1
 endsnippet
 
 snippet lim ""
 \lim $1
 endsnippet
 
-snippet _ "" i
+snippet _ "" Ai
 _{$1}$2
+endsnippet
+
+snippet mlim_ "" A
+$ \lim\limits_{$1 \to $2} $ $3
 endsnippet
 
 snippet lim_ "" A
 \lim\limits_{$1 \to $2} $3
+endsnippet
+
+snippet msum ""
+$ \sum\limits_{$1}^{$2} $ $3
 endsnippet
 
 snippet sum ""
@@ -253,12 +331,26 @@ snippet	$$ "" A
 $$ $1 $$
 endsnippet
 
+snippet mcase ""
+$
+\begin{cases}
+$1
+\end{cases} 
+$2 $ $3
+endsnippet
+
 snippet case ""
 
 \begin{cases}
 $1
-\end{cases}
+\end{cases} $2 
 endsnippet
+
+
+snippet mpi "" A
+$ \pi $ $1
+endsnippet
+
 
 snippet pi "" A
 \pi $1
@@ -266,6 +358,10 @@ endsnippet
 
 snippet ssec ""
 \subsection{$1}
+endsnippet
+
+snippet mint_ "" A
+$ \int_{$1}^{$2} $ $3
 endsnippet
 
 snippet int_ "" A
@@ -289,18 +385,16 @@ snippet par "" A
 $1
 endsnippet
 
-
 snippet enum "" A
 \begin{enumerate} [$\bullet$]
-\item $1 $2
-`!p
-if t[2] == "\n":
-	snip.rv="\item "
-`
+\item $1
 \end{enumerate}
 endsnippet
 
 
+snippet mint ""
+$ \int $ $0
+endsnippet
 
 snippet int ""
 \int $0
@@ -310,27 +404,51 @@ snippet item ""
 \item $1
 endsnippet
 
-snippet sin ""
+snippet msin "" A
+$ \sin $ $1
+endsnippet
+
+snippet sin "" A
 \sin $1
 endsnippet
 
-snippet cos ""
+snippet mcos "" A
+$ \cos $ $1
+endsnippet
+
+snippet cos "" A
 \cos $1
 endsnippet
 
-snippet tan ""
+snippet mtan "" A
+$\tan $ $1
+endsnippet
+
+snippet tan "" A
 \tan $1
 endsnippet
 
-snippet arctan ""
+snippet marctan "" A
+$\arctan $ $1
+endsnippet
+
+snippet arctan "" A
 \arctan $1
 endsnippet
 
-snippet arcsin ""
+snippet marcsin "" A
+$ \arcsin $ $1
+endsnippet
+
+snippet arcsin "" A
 \arcsin $1
 endsnippet
 
-snippet arccos ""
+snippet marccos "" A
+$\arccos $ $1
+endsnippet
+
+snippet arccos "" A
 \arccos $1
 endsnippet
 
@@ -338,16 +456,32 @@ snippet sec ""
 \sec $1
 endsnippet
 
-snippet csc ""
+snippet mcsc "" A
+$ \csc $ $1
+endsnippet
+
+snippet csc "" A
 \csc $1
 endsnippet
 
-snippet cot ""
+snippet mcot "" A
+$ \cot $ $1
+endsnippet
+
+snippet cot "" A
 \cot $1
+endsnippet
+
+snippet minf ""
+$ \infty $ $1
 endsnippet
 
 snippet inf ""
 \infty $1
+endsnippet
+
+snippet mln "" 
+$ \ln $ $1
 endsnippet
 
 snippet ln ""
@@ -356,4 +490,8 @@ endsnippet
 
 snippet sqrt ""
 \sqrt{$1}
+endsnippet
+
+snippet msqrt ""
+$ \sqrt{$1} $
 endsnippet

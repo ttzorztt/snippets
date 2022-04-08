@@ -1,2 +1,0 @@
-vscode-snippets: ~/.config/Code/User/snippets
-vim-snippets: ~/git/snippets/vim-snippets
