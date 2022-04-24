@@ -11,6 +11,7 @@ snippet forall "" A
 \forall $1
 endsnippet
 
+
 snippet mforall "" A
 $ \forall $1 $
 endsnippet 
@@ -311,7 +312,7 @@ $ \exists $ $1
 endsnippet
 
 
-snippet exists ""
+snippet exists "" A
 \exists $1
 endsnippet
 
@@ -327,12 +328,20 @@ snippet _ "" Ai
 _{$1}$2
 endsnippet
 
-snippet mlimm "" A
+snippet mlimm1 "" A
 $ \lim\limits_{$1 \to $2} $ $3
 endsnippet
 
-snippet limm "" A
+snippet mlimm2 "" A
+$ \lim\limits{\substack{$1 \to $2 \\ $3 \to $4}} $ $5 
+endsnippet
+
+snippet limm1 "" A
 \lim\limits_{$1 \to $2} $3
+endsnippet
+
+snippet limm2 "" A
+\lim\limits_{\substack{$1 \to $2 \\ $3 \to $4}} $5
 endsnippet
 
 snippet msum "" A
