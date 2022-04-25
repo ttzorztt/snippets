@@ -7,28 +7,17 @@ snippet mfrac "" A
 $ \frac{$1}{$2} $
 endsnippet
 
-snippet partial "" A
-\partial $1
-endsnippet
-
-snippet mpartial "" A
-$ \partial $ $1
-endsnippet
-
-snippet Delta "" A
-\Delta 
-endsnippet
-
-snippet mDelta "" A
-$\Delta $ $1
-endsnippet
-
-snippet varepsilon "" A
-\varepsilon $1
+snippet array "" A
+\left | \begin{array}{$1}
+$2
+\end{array} \right | $3
 endsnippet 
 
-snippet mvarepsilon "" A
-$\varepsilon $ $1
+snippet marray "" A
+$\left | \begin{array}{$1}
+$2
+\end{array} \right | $ $3
+endsnippet
 snippet forall "" A
 \forall $1
 endsnippet
