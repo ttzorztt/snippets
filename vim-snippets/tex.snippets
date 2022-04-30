@@ -29,6 +29,7 @@ endsnippet
 
 snippet mtheta "" A
 $ \theta $$1
+endsnippet
 
 snippet matrix "" A
 \begin{matrix}
@@ -522,10 +523,11 @@ snippet ssec ""
 endsnippet
 
 snippet miintt "" A
-$ \iint_{$1} $ $2
+$ \iint\limits_{D} $ $2
 endsnippet
+
 snippet miiintt "" A
-$ \iiint_{$1} $ $2
+$ \iiint\limits_{\Omega} $ $2
 endsnippet
 
 
@@ -534,13 +536,12 @@ $ \int_{$1}^{$2} $ $3
 endsnippet
 
 snippet iintt "" A
-\iint_{$1} $2
+\iint\limits_{D} $1
 endsnippet
 
 snippet iiintt "" A
-\iiint_{$1} $2
+\iiint\limits_{\Omega} $1
 endsnippet
-
 
 snippet intt "" A 
 \int_{$1}^{$2} $3
