@@ -9,6 +9,35 @@ ANS:$1
 \\newpage
 endsnippet
 
+snippet init "" b
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{cite}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{diagbox}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{fontspec}
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}  % 右上角
+\captionsetup[table]{labelsep=space}
+\captionsetup[figure]{labelsep=space}
+\begin{document}
+$1
+\begin{thebibliography}{99}
+	\bibitem 
+\end{thebibliography}
+\end{document}
+endsnippet
+
 snippet varphi "" A
 \psi
 endsnippet
