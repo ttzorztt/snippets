@@ -1,0 +1,19 @@
+snippet fcc ""
+function Check$1A(){
+	if (value.length < $1){
+		value.push(valueForA[$1]);
+	}else{
+		value[$1] = valueForA[$1];
+	}
+	document.getElementById("$1").innerHTML = "A";
+}
+function Check$1B(){
+	if (value.length < $1){
+		value.push(valueForB[$1]);
+	}else{
+		value[$1] = valueForB[$1];
+	}
+	document.getElementById("$1").innerHTML = "B";
+}
+endsnippet 
+
