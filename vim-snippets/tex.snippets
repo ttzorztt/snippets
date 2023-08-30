@@ -25,6 +25,7 @@ snippet init "" b
 \usepackage{caption}
 \usepackage{booktabs}
 \usepackage{array}
+\usepackage{tabu}
 \usepackage{geometry}
 \usepackage{fontspec}
 \newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}  % 右上角
@@ -51,7 +52,7 @@ snippet mphi "" A
 $ \phi $
 endsnippet
 
-snippet mu "" 
+snippet mu ""
 \mu
 endsnippet
 
@@ -59,11 +60,11 @@ snippet mmu "" A
 $ \mu $
 endsnippet
 
-snippet sigma "" 
+snippet sigma ""
 \sigma
 endsnippet
 
-snippet msigma1 "" A 
+snippet msigma1 "" A
 $ \sigma $
 endsnippet
 
@@ -142,7 +143,7 @@ endsnippet
 
 snippet mlintt "" A
 $\int_{L} $1$ $2
-endsnippet 
+endsnippet
 
 snippet omega "" A
 \ogega $1
@@ -150,7 +151,7 @@ endsnippet
 
 snippet momega "" A
 $\omgea $ $1
-endsnippet 
+endsnippet
 
 snippet Omega "" A
 \Omega $1
@@ -206,7 +207,7 @@ endsnippet
 
 snippet lambda "" A
 \lambda $1
-endsnippet 
+endsnippet
 
 snippet mlambda "" A
 $ \lambda $ $1
@@ -222,7 +223,7 @@ endsnippet
 
 snippet cdots "" A
 \cdots $1
-endsnippet 
+endsnippet
 
 snippet mpartial "" A
 \partial $1
@@ -250,7 +251,7 @@ endsnippet
 
 snippet vdots "" A
 \vdots $1
-endsnippet 
+endsnippet
 
 snippet ｝ "" A
 }$1
@@ -261,7 +262,7 @@ snippet array "" A
 \left | \begin{array}{$1}
 $2
 \end{array} \right | $3
-endsnippet 
+endsnippet
 
 snippet marray "" A
 $\left | \begin{array}{$1}
@@ -275,7 +276,7 @@ endsnippet
 
 snippet mforall "" A
 $ \forall $1 $
-endsnippet 
+endsnippet
 
 snippet because "" A
 \because $1
@@ -283,17 +284,17 @@ endsnippet
 
 snippet mbecause "" A
 $ \because $1 $$2
-endsnippet 
+endsnippet
 
 snippet ： "" Ai
 :$1
 endsnippet
 
 snippet frac "" A
-\frac{$1}{$2} 
+\frac{$1}{$2}
 endsnippet
 
-snippet msim "" A 
+snippet msim "" A
 $ \sim $$1
 endsnippet
 
@@ -301,11 +302,11 @@ snippet sim "" A
 \sim $1
 endsnippet
 
-snippet img "" 
+snippet img ""
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=$1]{$2}
-	\caption{$3}
+\centering
+\includegraphics[scale=$1]{$2}
+\caption{$3}
 \end{figure}
 $4
 endsnippet
@@ -326,12 +327,12 @@ snippet figure*2 "" A
 	\hbox{
 		\vbox{\hsize 0.5\textwidth
 			\begin{verbatim}
-$1
-			\end{verbatim}}
+			$1
+				\end{verbatim}}
 		\vbox{\hsize 0.5\textwidth
 			\begin{verbatim}
-$2
-			\end{verbatim}}
+			$2
+				\end{verbatim}}
 	}
 }
 \end{figure}
@@ -344,480 +345,480 @@ snippet figure*3 "" A
 	\hbox{
 		\vbox{\hsize 0.33\textwidth
 			\begin{verbatim}
-$1
-			\end{verbatim}}
+			$1
+				\end{verbatim}}
 		\vbox{\hsize 0.33\textwidth
 			\begin{verbatim}
-$2
-			\end{verbatim}}
+			$2
+				\end{verbatim}}
 		\vbox{\hsize 0.33\textwidth
 			\begin{verbatim}
-$3
-			\end{verbatim}
+			$3
+				\end{verbatim}
+		}
 	}
-}
-\end{figure}
-endsnippet
+	\end{figure}
+	endsnippet
 
-snippet figure*4 "" A
-\begin{figure}[H]
-\hfil
-\vbox{
-	\hbox{
-		\vbox{\hsize 0.25\textwidth
-			\begin{verbatim}
-$1
-			\end{verbatim}}
-		\vbox{\hsize 0.25\textwidth
-			\begin{verbatim}
-$2
-			\end{verbatim}}
-		\vbox{\hsize 0.25\textwidth
-			\begin{verbatim}
-$3
-			\end{verbatim}}
-		\vbox{\hsize 0.25\textwidth
-			\begin{verbatim}
-$4
-			\end{verbatim}}
-	}
-}
-\end{figure}
+		snippet figure*4 "" A
+		\begin{figure}[H]
+		\hfil
+		\vbox{
+			\hbox{
+				\vbox{\hsize 0.25\textwidth
+					\begin{verbatim}
+					$1
+						\end{verbatim}}
+				\vbox{\hsize 0.25\textwidth
+					\begin{verbatim}
+					$2
+						\end{verbatim}}
+				\vbox{\hsize 0.25\textwidth
+					\begin{verbatim}
+					$3
+						\end{verbatim}}
+				\vbox{\hsize 0.25\textwidth
+					\begin{verbatim}
+					$4
+						\end{verbatim}}
+			}
+		}
+	\end{figure}
 
-endsnippet
-snippet code ""
-\begin{verbatim}
-$1
-\end{verbatim}
-endsnippet
+	endsnippet
+		snippet code ""
+		\begin{verbatim}
+	$1
+		\end{verbatim}
+	endsnippet
 
 # usepackage{longtable}
 # usepackage{tabu}
 # usepackage{booktabs}
-snippet longtabu "" A
-\begin{longtabu}{$1}
-\caption*{$2} \\\
-\toprule
-$3
-\midrule
-$4
-\bottomrule
-\end{longtabu}
-endsnippet
-
-snippet xz "" A
-eg. $1 () \par
-A. $2 \par
-B. $3 \par
-C. $4 \par
-D. $5 \par
-$6
-endsnippet
-
-snippet textit "" A
-\textit{$1}
-endsnippet
-
-snippet ^ "" Ai
-^{$1}
-endsnippet
-
-snippet aligned "" A
-\begin{aligned}
-$1
-\end{aligned}
-endsnippet
-
-snippet mto "" A
-$\to $ $1
-endsnippet
-
-snippet to ""
-\to $1
-endsnippet
-
-snippet mtherefore "" A
-$\therefore $ $1
-endsnippet
-
-snippet therefore "" A
-\therefore $1
-endsnippet
-
-snippet mquad "" A
-$ \quad $ $1
-endsnippet
-
-snippet quad ""
-\quad $1
-endsnippet
-
-snippet mqquad "" A
-$ \qquad $ $1
-endsnippet
-
-snippet qquad "" A
-\qquad $1
-endsnippet
-
-snippet xle "" A
-\xlongequal[${1:${VISUAL:Top}}]{${2:${VISUAL:Bottom}}}
-endsnippet
-
-snippet " "" A
-"$1"
-endsnippet
-
-snippet ' "" 
-'$1'
-endsnippet
-
-snippet mneq "" A
-$ \neq $ $1
-endsnippet
-
-snippet neq ""
-\neq $1
-endsnippet
-
-snippet ( "" Ai
-($1)$2
-endsnippet
-
-snippet （ "" Ai
-($1)$2
-endsnippet
-
-snippet { "" Ai
-{$1}$2
-endsnippet
-
-snippet [ "" Ai
-[$1]$2
-endsnippet
+		snippet longtabu "" A
+		\begin{longtabu}{$1}
+	\caption*{$2} \\\
+		\toprule
+		$3
+		\midrule
+		$4
+		\bottomrule
+		\end{longtabu}
+	endsnippet
+
+		snippet xz "" A
+		eg. $1 () \par
+		A. $2 \par
+		B. $3 \par
+		C. $4 \par
+		D. $5 \par
+		$6
+		endsnippet
+
+		snippet textit "" A
+		\textit{$1}
+	endsnippet
+
+		snippet ^ "" Ai
+		^{$1}
+	endsnippet
+
+		snippet aligned "" A
+		\begin{aligned}
+	$1
+		\end{aligned}
+	endsnippet
+
+		snippet mto "" A
+		$\to $ $1
+		endsnippet
+
+		snippet to ""
+		\to $1
+		endsnippet
+
+		snippet mtherefore "" A
+		$\therefore $ $1
+		endsnippet
+
+		snippet therefore "" A
+		\therefore $1
+		endsnippet
+
+		snippet mquad "" A
+		$ \quad $ $1
+		endsnippet
+
+		snippet quad ""
+		\quad $1
+		endsnippet
+
+		snippet mqquad "" A
+		$ \qquad $ $1
+		endsnippet
+
+		snippet qquad "" A
+		\qquad $1
+		endsnippet
+
+		snippet xle "" A
+		\xlongequal[${1:${VISUAL:Top}}]{${2:${VISUAL:Bottom}}}
+	endsnippet
+
+		snippet " "" A
+		"$1"
+		endsnippet
+
+		snippet ' ""
+		'$1'
+		endsnippet
+
+		snippet mneq "" A
+		$ \neq $ $1
+		endsnippet
+
+		snippet neq ""
+		\neq $1
+		endsnippet
+
+		snippet ( "" Ai
+				($1)$2
+				endsnippet
+
+				snippet （ "" Ai
+				($1)$2
+				endsnippet
+
+				snippet { "" Ai
+				{$1}$2
+				endsnippet
+
+				snippet [ "" Ai
+				[$1]$2
+				endsnippet
 
-snippet mgeq "" A
-$\geq $ $1
-endsnippet
+				snippet mgeq "" A
+				$\geq $ $1
+				endsnippet
 
-snippet geq "" A
-\geq $1
-endsnippet
+				snippet geq "" A
+				\geq $1
+				endsnippet
 
-snippet mleq "" A
-$\leq $ $1
-endsnippet
+				snippet mleq "" A
+				$\leq $ $1
+				endsnippet
 
-snippet leq "" A
-\leq $1
-endsnippet
+				snippet leq "" A
+				\leq $1
+				endsnippet
 
-snippet min "" 
-$\in $ $1
-endsnippet
+				snippet min ""
+				$\in $ $1
+				endsnippet
 
-snippet in ""
-\in $1
-endsnippet
+				snippet in ""
+				\in $1
+				endsnippet
 
-snippet mRa "" A
-$ \Rightarrow$ $1
-endsnippet
+				snippet mRa "" A
+				$ \Rightarrow$ $1
+				endsnippet
 
-snippet Ra ""
-\Rightarrow $1
-endsnippet
+				snippet Ra ""
+				\Rightarrow $1
+				endsnippet
 
-snippet	mnRa "" A
-$\nRightarrow $ $1
-endsnippet
+				snippet	mnRa "" A
+				$\nRightarrow $ $1
+				endsnippet
 
-snippet	nRa ""
-\nRightarrow
-endsnippet
+				snippet	nRa ""
+				\nRightarrow
+				endsnippet
 
-snippet mnra "" A
-$ \nrightarrow $ $1
-endsnippet
+				snippet mnra "" A
+				$ \nrightarrow $ $1
+				endsnippet
 
-snippet nra ""
-\nrightarrow
-endsnippet
-
-snippet mra "" A
-$\rightarrow $
-endsnippet
+				snippet nra ""
+				\nrightarrow
+				endsnippet
+
+				snippet mra "" A
+				$\rightarrow $
+				endsnippet
 
-snippet ra ""
-\rightarrow
-endsnippet
-
-snippet mlra "" A
-$ \leftrightarrow $ $1
-endsnippet
+				snippet ra ""
+				\rightarrow
+				endsnippet
+
+				snippet mlra "" A
+				$ \leftrightarrow $ $1
+				endsnippet
 
-snippet lra ""
-\leftrightarrow $1
-endsnippet
+				snippet lra ""
+				\leftrightarrow $1
+				endsnippet
 
-snippet mLra "" A
-$ \Leftrightarrow $ $1
-endsnippet
+				snippet mLra "" A
+				$ \Leftrightarrow $ $1
+				endsnippet
 
-snippet Lra ""
-\Leftrightarrow $1
-endsnippet
+				snippet Lra ""
+				\Leftrightarrow $1
+				endsnippet
 
-snippet mexists "" A
-$ \exists $ $1
-endsnippet
+				snippet mexists "" A
+				$ \exists $ $1
+				endsnippet
 
 
-snippet exists "" A
-\exists $1
-endsnippet
+				snippet exists "" A
+				\exists $1
+				endsnippet
 
-snippet mlim "" 
-$ \lim $ $1
-endsnippet
+				snippet mlim ""
+				$ \lim $ $1
+				endsnippet
 
-snippet lim ""
-\lim $1
-endsnippet
+				snippet lim ""
+				\lim $1
+				endsnippet
 
-snippet _ "" Ai
-_{$1}$2
-endsnippet
+				snippet _ "" Ai
+				_{$1}$2
+				endsnippet
 
-snippet mlimm1 "" A
-$ \lim\limits_{$1 \to $2} $ $3
-endsnippet
+				snippet mlimm1 "" A
+				$ \lim\limits_{$1 \to $2} $ $3
+				endsnippet
 
-snippet mlimm2 "" A
-$ \lim\limits_{\substack{$1 \to $2 \\\\ $3 \to $4}} $ $5 
-endsnippet
+				snippet mlimm2 "" A
+				$ \lim\limits_{\substack{$1 \to $2 \\\\ $3 \to $4}} $ $5
+				endsnippet
 
-snippet mlimm3 "" A
-$ \lim\limits_{\substack{$1 \to $2 \\\\ $3 \to $4 \\\\ $5 \to $6 }} $ $7
-endsnippet
+				snippet mlimm3 "" A
+				$ \lim\limits_{\substack{$1 \to $2 \\\\ $3 \to $4 \\\\ $5 \to $6 }} $ $7
+				endsnippet
 
-snippet limm3 "" A
-\lim\limits_{\substack{$1 \to $2 \\\\ $3 \to $4 \\\\ $5 \to $6 }} $7
-endsnippet 
+				snippet limm3 "" A
+				\lim\limits_{\substack{$1 \to $2 \\\\ $3 \to $4 \\\\ $5 \to $6 }} $7
+				endsnippet
 
 
-snippet limm1 "" A
-\lim\limits_{$1 \to $2} $3
-endsnippet
+				snippet limm1 "" A
+				\lim\limits_{$1 \to $2} $3
+				endsnippet
 
-snippet limm2 "" A
-\lim\limits_{\substack{$1 \to $2 \\\\ $3 \to $4}} $5
-endsnippet
+				snippet limm2 "" A
+				\lim\limits_{\substack{$1 \to $2 \\\\ $3 \to $4}} $5
+				endsnippet
 
-snippet msum "" A
-$ \sum\limits_{$1}^{$2} $ $3
-endsnippet
+				snippet msum "" A
+				$ \sum\limits_{$1}^{$2} $ $3
+				endsnippet
 
-snippet sum "" A
-\sum\limits_{$1}^{$2} $3
-endsnippet
+				snippet sum "" A
+				\sum\limits_{$1}^{$2} $3
+				endsnippet
 
-snippet ssum "" A 
-\sum $1
-endsnippet
+				snippet ssum "" A
+				\sum $1
+				endsnippet
 
-snippet mssum "" A
-$ \sum $1 $$2
-endsnippet
-snippet $ ""
-$ $1 $
-endsnippet
+				snippet mssum "" A
+				$ \sum $1 $$2
+				endsnippet
+				snippet $ ""
+				$ $1 $
+				endsnippet
 
-snippet	$$ "" A
-$$ $1 $$
-endsnippet
+				snippet	$$ "" A
+				$$ $1 $$
+				endsnippet
 
-snippet mcase "" A
-$
-\begin{cases}
-$1
-\end{cases} 
-$2 $ $3
-endsnippet
+				snippet mcase "" A
+				$
+				\begin{cases}
+				$1
+					\end{cases}
+				$2 $ $3
+					endsnippet
 
-snippet case ""
+					snippet case ""
 
-\begin{cases}
-$1
-\end{cases} $2 
-endsnippet
+					\begin{cases}
+				$1
+					\end{cases} $2
+					endsnippet
 
 
-snippet mpi "" A
-$ \pi $ $1
-endsnippet
+					snippet mpi "" A
+					$ \pi $ $1
+					endsnippet
 
 
-snippet pi "" A
-\pi $1
-endsnippet
+					snippet pi "" A
+					\pi $1
+					endsnippet
 
-snippet ssec ""
-\subsection{$1}
-endsnippet
+					snippet ssec ""
+					\subsection{$1}
+				endsnippet
 
-snippet miintt "" A
-$ \iint\limits_{D} $ $2
-endsnippet
+					snippet miintt "" A
+					$ \iint\limits_{D} $ $2
+					endsnippet
 
-snippet miiintt "" A
-$ \iiint\limits_{\Omega} $ $2
-endsnippet
+					snippet miiintt "" A
+					$ \iiint\limits_{\Omega} $ $2
+					endsnippet
 
 
-snippet mintt "" A
-$ \int_{$1}^{$2} $ $3
-endsnippet
+					snippet mintt "" A
+					$ \int_{$1}^{$2} $ $3
+					endsnippet
 
-snippet iintt "" A
-\iint\limits_{D} $1
-endsnippet
+					snippet iintt "" A
+					\iint\limits_{D} $1
+					endsnippet
 
-snippet iiintt "" A
-\iiint\limits_{\Omega} $1
-endsnippet
+					snippet iiintt "" A
+					\iiint\limits_{\Omega} $1
+					endsnippet
 
-snippet intt "" A 
-\int_{$1}^{$2} $3
-endsnippet
+					snippet intt "" A
+					\int_{$1}^{$2} $3
+					endsnippet
 
-snippet sssec "" A
-\subsubsection{$1}
-endsnippet
+					snippet sssec "" A
+					\subsubsection{$1}
+				endsnippet
 
-snippet sect ""
-\section{$1}
-endsnippet
+					snippet sect ""
+					\section{$1}
+				endsnippet
 
-snippet textbf "" A
-\textbf{$1}
-endsnippet
+					snippet textbf "" A
+					\textbf{$1}
+				endsnippet
 
-snippet par "" A
-\par
-$1
-endsnippet
+					snippet par "" A
+					\par
+					$1
+					endsnippet
 
-snippet enum "" A
-\begin{enumerate}
-\item $1
-\end{enumerate}
-endsnippet
+					snippet enum "" A
+					\begin{enumerate}
+				\item $1
+					\end{enumerate}
+				endsnippet
 
 
-snippet mint "" 
-$ \int $ $0
-endsnippet
+					snippet mint ""
+					$ \int $ $0
+					endsnippet
 
-snippet int ""
-\int $0
-endsnippet
-snippet iint ""
-\iint $1
-endsnippet
+					snippet int ""
+					\int $0
+					endsnippet
+					snippet iint ""
+					\iint $1
+					endsnippet
 
-snippet item ""
-\item $1
-endsnippet
+					snippet item ""
+					\item $1
+					endsnippet
 
-snippet msin "" A
-$ \sin $ $1
-endsnippet
+					snippet msin "" A
+					$ \sin $ $1
+					endsnippet
 
-snippet sin "" 
-\sin $1
-endsnippet
+					snippet sin ""
+					\sin $1
+					endsnippet
 
-snippet mcos "" A
-$ \cos $ $1
-endsnippet
+					snippet mcos "" A
+					$ \cos $ $1
+					endsnippet
 
-snippet cos "" 
-\cos $1
-endsnippet
+					snippet cos ""
+					\cos $1
+					endsnippet
 
-snippet mtan "" A
-$\tan $ $1
-endsnippet
+					snippet mtan "" A
+					$\tan $ $1
+					endsnippet
 
-snippet tan "" 
-\tan $1
-endsnippet
+					snippet tan ""
+					\tan $1
+					endsnippet
 
-snippet marctan "" A
-$\arctan $ $1
-endsnippet
+					snippet marctan "" A
+					$\arctan $ $1
+					endsnippet
 
-snippet arctan "" 
-\arctan $1
-endsnippet
+					snippet arctan ""
+					\arctan $1
+					endsnippet
 
-snippet marcsin "" A
-$ \arcsin $ $1
-endsnippet
+					snippet marcsin "" A
+					$ \arcsin $ $1
+					endsnippet
 
-snippet arcsin "" 
-\arcsin $1
-endsnippet
+					snippet arcsin ""
+					\arcsin $1
+					endsnippet
 
-snippet marccos "" A
-$\arccos $ $1
-endsnippet
+					snippet marccos "" A
+					$\arccos $ $1
+					endsnippet
 
-snippet arccos "" 
-\arccos $1
-endsnippet
+					snippet arccos ""
+					\arccos $1
+					endsnippet
 
-snippet sec ""
-\sec $1
-endsnippet
+					snippet sec ""
+					\sec $1
+					endsnippet
 
-snippet mcsc "" A
-$ \csc $ $1
-endsnippet
+					snippet mcsc "" A
+					$ \csc $ $1
+					endsnippet
 
-snippet csc "" 
-\csc $1
-endsnippet
+					snippet csc ""
+					\csc $1
+					endsnippet
 
-snippet mcot "" A
-$ \cot $ $1
-endsnippet
+					snippet mcot "" A
+					$ \cot $ $1
+					endsnippet
 
-snippet cot "" 
-\cot $1
-endsnippet
+					snippet cot ""
+					\cot $1
+					endsnippet
 
-snippet minf "" A
-$ \infty $ $1
-endsnippet
+					snippet minf "" A
+					$ \infty $ $1
+					endsnippet
 
-snippet inf "" A
-\infty $1
-endsnippet
+					snippet inf "" A
+					\infty $1
+					endsnippet
 
-snippet mln "" A
-$ \ln $ $1
-endsnippet
+					snippet mln "" A
+					$ \ln $ $1
+					endsnippet
 
-snippet ln ""
-\ln $1
-endsnippet
+					snippet ln ""
+					\ln $1
+					endsnippet
 
-snippet sqrt "" A
-\sqrt{$1}
-endsnippet
+					snippet sqrt "" A
+					\sqrt{$1}
+				endsnippet
 
-snippet msqrt "" A
-$ \sqrt{$1} $
-endsnippet
+					snippet msqrt "" A
+					$ \sqrt{$1} $
+					endsnippet
